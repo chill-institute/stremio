@@ -1,0 +1,38 @@
+{
+  "name": "putio-stremio-addon",
+  "version": "1.1.0",
+  "description": "putio addon for stremio",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://chill-institute@bitbucket.org/chill-institute/stremio"
+  },
+  "keywords": [
+    "putio",
+    "addon",
+    "stremio"
+  ],
+  "author": "Chill Institute <chill-institute@tutanota.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://chill-institute@bitbucket.org/chill-institute/stremio"
+  },
+  "homepage": "https://chill-institute@bitbucket.org/chill-institute/stremio",
+  "dependencies": {
+    "@putdotio/api-client": "^2.15.0",
+    "express": "^4.16.3",
+    "js-base64": "^2.4.3",
+    "morgan": "^1.9.0",
+    "shortid": "^2.2.8",
+    "stremio-addons": "github:chill-institute/stremio-addons",
+    "winston": "^2.4.1",
+    "winston-papertrail": "^1.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}

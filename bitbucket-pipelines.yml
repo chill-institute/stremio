@@ -1,0 +1,10 @@
+image: node:9
+pipelines:
+  default:
+    - step:
+        deployment: production
+        script:
+          - chmod +x /usr/bin/ssh
+          - chmod +x ./deploy.sh
+          - ./deploy.sh
+

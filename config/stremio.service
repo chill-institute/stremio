@@ -1,0 +1,13 @@
+[Unit]
+Description=Stremio Plugin
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/strem.io
+ExecStart=/usr/bin/npm start
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
